@@ -1,0 +1,55 @@
+* {
+    font-family:Verdana;
+    font-size: 18px;
+}
+
+h2 {
+    font-weight: bolder;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+p {
+    font-weight: light;
+}
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(177deg, rgba(2,0,36,1) 0%, rgba(255,215,0,1) 0%, rgba(170,24,154,1) 100%);
+}
+
+.navbarfaq {
+    background-color: white;
+}
+
+.logo {
+    font-size: large;
+}
+
+.content {  /*content yg align ke kiri*/
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    color: black;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin: 1em;
+    display: inline-block;
+
+}
+
+.caption {
+    display: block;
+}
+
+.content2 { /*content align ke kanan, variasi zigzag */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    color: black;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin: 1em;   
+}
