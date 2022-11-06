@@ -3,10 +3,6 @@
   font-size: 18px;
 }
 
-.logo {
-  font-size: large;
-}
-
 .bio .profile-picture {
   border-radius: 50%;
   margin: 1em;
@@ -20,6 +16,19 @@ nav {
 
 .navbarhome {
   background-color: white;
+}
+
+.navbarhome .container .brand {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(255, 215, 0, 1) 0%,
+      rgba(170, 24, 154, 1) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .navlist {
@@ -49,63 +58,22 @@ body {
   );
 }
 
-footer {
-  background-color: whitesmoke;
-  width: 100%;
-  text-align: center;
-  padding-bottom: 10px;
-  padding-top: 20px;
-}
-
-.banner {
-  background-image: url("https://cdn1.epicgames.com/ue/product/Screenshot/Featured-1920x1080-a28c7c260d607463cdfbef8586d9780a.jpg?resize=1&w=1920");
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  top: -30px;
-  left: 0;
-  position: relative;
-}
-
-.profile_Picture {
-  position: absolute;
-  z-index: 2;
-  top: 45%;
-  left: 660px;
-  height: 200px;
-  width: 200px;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
-    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-}
-
-.biography {
-  position: relative;
-  z-index: 1;
-  top: -40px;
-  width: 100%;
-  text-align: center;
-  box-shadow: inset 0px 0px 50px 10px rgba(0, 0, 0, 0.2);
-  background-color: white;
-  padding-bottom: 10px;
-}
 
 /* ga ada text di h1 */
 
 h2 {
-    font-weight: bold;
+    font-weight: bolder;
+    margin-bottom: 1rem;
 }   
 
 h3 {
-  color: rgba(0, 0, 0, 0.6);
-  font-weight: bold;
+  color: rgba(0, 0, 0, 1);
+  font-size: 24px;
 }
 
-h4 {
+h4 {  
+  color: rgba(0, 0, 0, 0.6);
   font-size: small;
-  font-weight: bold;
 }
 
 a {
@@ -115,9 +83,14 @@ a {
 .content {
   /*content yg align ke kiri*/
   color: black;
-  padding: 200px;
+  padding: 100px;
+  margin-top: 3em;
+  margin-left: 2em;
+  margin-right: 2em;
   text-align: left;
-  margin-bottom: 1em;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 1em;
 }
 
 .content img {
@@ -125,29 +98,96 @@ a {
   width: 400px;
   float: right;
   object-fit: cover;
-  margin: 1em;
+  margin: 1em;  
+  border: none;
+  border-radius: 1rem;
+}
+
+.content .musika {
+    text-align: right;
 }
 
 .content2 {
   /*content align ke kanan, variasi zigzag */
   color: black;
-  padding: 200px;
+  padding: 100px;
   text-align: right;
-  margin-bottom: 1em;
+  margin-top: 3em;
+  margin-left: 2em;
+  margin-right: 2em;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 2em;
 }
 
-.content2 .img {
+.content2 img {
   height: 400px;
   width: 400px;
   float: left;
   object-fit: cover;
   margin: 1em;
+  border: none;
+  border-radius: 1rem;
 }
 
-.break {
-  margin-top: 1em;
-  margin-bottom: 1em;
+.content2 ul {
+    background-color: whitesmoke;
+
+    width: 50%;
+    position: relative;
+    left: 50%;
 }
+
+.content2 .hardskill-list {
+    direction: rtl;
+}
+
+.skills {
+    background-color: whitesmoke;
+    margin-top: 3em;
+    margin-left: 2em;
+    margin-right: 2em;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 2em;
+}
+
+.spotify-button {
+    border: 1px solid;
+    border-image-slice: 1;
+    padding: 1em;
+    border-image-source: linear-gradient(
+        177deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(255, 215, 0, 1) 0%,
+        rgba(170, 24, 154, 1) 100%
+      );
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(255, 215, 0, 1) 0%,
+        rgba(170, 24, 154, 1) 100%
+      );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: 0.3s;
+}
+
+.spotify-button:hover {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      177deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(255, 215, 0, 1) 0%,
+      rgba(170, 24, 154, 1) 100%
+    );
+    color: white;
+    border: none;
+    padding: 1em;
+}
+
 
 p {
   text-align: justify;
@@ -160,4 +200,24 @@ ul {
 
 hr {
   height: 20px;
+}
+
+ footer {
+    background-color: whitesmoke;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 3em;
+    background-color: whitesmoke;
+    border: none;
+    text-align: center;
+}
+
+footer .links {
+    align-items: center;
+}
+
+footer .links a {
+    align-items: center;
+    margin: 0.5em;
 }

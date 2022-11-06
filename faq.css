@@ -1,55 +1,223 @@
 * {
-    font-family:Verdana;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-}
-
-h2 {
-    font-weight: bolder;
-}
-
-h3 {
-    font-weight: normal;
-}
-
-p {
-    font-weight: light;
-}
-
-body {
-    background: rgb(2,0,36);
-    background: linear-gradient(177deg, rgba(2,0,36,1) 0%, rgba(255,215,0,1) 0%, rgba(170,24,154,1) 100%);
-}
-
-.navbarfaq {
-    background-color: white;
-}
-
-.logo {
-    font-size: large;
-}
-
-.content {  /*content yg align ke kiri*/
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    color: black;
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+  }
+  
+  .bio .profile-picture {
+    border-radius: 50%;
     margin: 1em;
-    display: inline-block;
-
-}
-
-.caption {
-    display: block;
-}
-
-.content2 { /*content align ke kanan, variasi zigzag */
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+  
+  nav {
+    padding: 20px;
+    background-color: whitesmoke;
+    color: #000000;
+  }
+  
+  .navbarabout {
+    background-color: white;
+  }
+  
+  .navbarabout .container .brand {
+      background: rgb(2, 0, 36);
+      background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(255, 215, 0, 1) 0%,
+        rgba(170, 24, 154, 1) 100%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+  }
+  
+  .navlist {
+    align-items: center;
+    margin: 0;
+    padding-right: 0em;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    font-size: 24px;
+  }
+  
+  .navlist li {
+    flex-grow: 0;
+    flex-shrink: 1;
+  }
+  
+  body {
+    /* Background CONTENT */
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      177deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(255, 215, 0, 1) 0%,
+      rgba(170, 24, 154, 1) 100%
+    );
+  }
+  
+  
+  /* ga ada text di h1 */
+  
+  h2 {
+      font-weight: bolder;
+      margin-bottom: 1rem;
+  }   
+  
+  h3 {
+    color: rgba(0, 0, 0, 1);
+    font-size: 24px;
+  }
+  
+  h4 {  
+    color: rgba(0, 0, 0, 0.6);
+    font-size: small;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .content {
+    /*content yg align ke kiri*/
     color: black;
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    margin: 1em;   
-}
+    padding: 100px;
+    margin-top: 3em;
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: left;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 1em;
+  }
+  
+  .content img {
+    height: 400px;
+    width: 400px;
+    float: right;
+    object-fit: cover;
+    margin: 1em;  
+    border: none;
+    border-radius: 1rem;
+  }
+  
+  .content .musika {
+      text-align: right;
+  }
+  
+  .content2 {
+    /*content align ke kanan, variasi zigzag */
+    color: black;
+    padding: 100px;
+    text-align: right;
+    margin-top: 3em;
+    margin-left: 2em;
+    margin-right: 2em;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 2em;
+  }
+  
+  .content2 img {
+    height: 400px;
+    width: 400px;
+    float: left;
+    object-fit: cover;
+    margin: 1em;
+    border: none;
+    border-radius: 1rem;
+  }
+  
+  .content2 ul {
+      background-color: whitesmoke;
+  
+      width: 50%;
+      position: relative;
+      left: 50%;
+  }
+  
+  .content2 .hardskill-list {
+      direction: rtl;
+  }
+  
+  .skills {
+      background-color: whitesmoke;
+      margin-top: 3em;
+      margin-left: 2em;
+      margin-right: 2em;
+      background-color: whitesmoke;
+      border: none;
+      border-radius: 2em;
+  }
+  
+  .spotify-button {
+      border: 1px solid;
+      border-image-slice: 1;
+      padding: 1em;
+      border-image-source: linear-gradient(
+          177deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(255, 215, 0, 1) 0%,
+          rgba(170, 24, 154, 1) 100%
+        );
+      background: rgb(2, 0, 36);
+      background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(255, 215, 0, 1) 0%,
+          rgba(170, 24, 154, 1) 100%
+        );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      transition: 0.3s;
+  }
+  
+  .spotify-button:hover {
+      background: rgb(2, 0, 36);
+      background: linear-gradient(
+        177deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(255, 215, 0, 1) 0%,
+        rgba(170, 24, 154, 1) 100%
+      );
+      color: white;
+      border: none;
+      padding: 1em;
+  }
+  
+  
+  p {
+    text-align: justify;
+    width: 50%;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  hr {
+    height: 20px;
+  }
+  
+   footer {
+      background-color: whitesmoke;
+      color: black;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-top: 7.6em;
+      background-color: whitesmoke;
+      border: none;
+      text-align: center;
+  }
+  
+  footer .links {
+      align-items: center;
+  }
+  
+  footer .links a {
+      align-items: center;
+      margin: 0.5em;
+  }
+  
